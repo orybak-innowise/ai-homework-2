@@ -1,57 +1,67 @@
-# React Pricing Component with Dashboard
+# User Directory Application
 
-A modern React application showcasing responsive pricing cards and optimized performance using Web Workers.
+A React application for managing users with search functionality, pagination, and modal windows. Built with React, Styled CSS
+
 
 ## Features
 
-### Pricing Section
-- Responsive pricing cards layout (1 column mobile, 2 columns tablet, 3 columns desktop)
-- Featured card with elevated design and darker background
-- Clean, modern UI with Tailwind CSS
-- Smooth hover effects and transitions
-- Keyboard accessibility with focus states
-- No spacing between cards for seamless design
+- **User List**: Display users in a structured list format
+- **Search Functionality**: Search through users with SearchBar component
+- **Pagination**: Navigate through user data with pagination controls
+- **User Modal**: View detailed user information in modal windows
+- **Responsive Design**: Modern UI built with Tailwind CSS
+- **TypeScript Support**: Full TypeScript integration for type safety
 
-### Dashboard Component
-- Heavy computation handled in Web Worker
-- Non-blocking UI implementation
-- Loading state during calculation
-- Clean worker cleanup on unmount
+## How to Run the Project
 
-## Technical Implementation
+### Prerequisites
+- Node.js (version 14 or higher)
+- npm or yarn package manager
 
-### Components
-- `PricingCard`: Individual pricing card with TypeScript props
-- `PricingSection`: Container component managing pricing cards layout
-- `Dashboard`: Example of Web Worker implementation for performance optimization
+### Installation and Setup
 
-### Performance Optimizations
-- Web Worker for heavy computations
-- Optimized Tailwind CSS classes
-- Proper component organization
-- Responsive design without performance impact
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd ai-homework-2
+   ```
 
-### Technologies Used
-- React
-- TypeScript
-- Tailwind CSS
-- Web Workers
-- Vite
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Start development server**
+   ```bash
+   npm run dev
+   ```
+   The application will be available at `http://localhost:5173`
+
+### Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build the project for production
+- `npm run preview` - Preview the production build
+- `npm run lint` - Run ESLint for code linting
 
 ## Project Structure
+
 ```
 src/
   components/
-    Dashboard.tsx
-    PricingCard.tsx
-    PricingSection.tsx
-  workers/
-    computeWorker.ts
-  App.jsx
-  index.css
+    UserList/
+    SearchBar/
+    Pagination/
+    UserModal/
+  styles/
+  types.ts
+  App.tsx
+  main.jsx
 ```
 
-## Development
-1. Clone the repository
-2. Install dependencies: `npm install`
-3. Run development server: `npm run dev`
+## Technologies Used
+
+- React 19.1.0
+- TypeScript
+- Vite (build tool)
+- ESLint (code linting)
